@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +16,6 @@
 
         .navbar {
             background-color: #102f5e;
-           
-            
         }
 
         .navbar-brand {
@@ -24,9 +23,13 @@
             color: white;
         }
 
+        .navbar-brand img {
+            width: 180px;
+            height: auto;
+        }
+
         .nav-link {
             color: white;
-         
         }
 
         .nav-link:hover {
@@ -47,6 +50,8 @@
 
         .hero img {
             border: 5px solid white;
+            object-fit: contain;
+            background-color: white;
         }
 
         .section {
@@ -99,8 +104,10 @@
         .card img {
             width: 100%;
             height: 260px;
-            object-fit: cover;
+            object-fit: contain;
             object-position: center;
+            background-color: #f5f7fb;
+            padding: 5px;
         }
 
         .course-card {
@@ -155,7 +162,7 @@
             border-top: 1px solid rgba(255,255,255,0.2);
             margin-top: 25px;
             padding-top: 15px;
-        }   
+        }
 
         .footer-bottom p {
             font-size: 12px;
@@ -170,7 +177,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid px-4">
 
-        <a class="navbar-brand" href="#home">OBMC</a>
+        <a class="navbar-brand" href="#home">
+            <img src="https://static1.squarespace.com/static/664c7ae50eea9c731b37e817/t/6a5f8e02ce141d63995e575f/1784647171093/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w"
+            alt="OBMC Logo">
+        </a>
 
         <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbar">
@@ -217,13 +227,14 @@
     </div>
 </section>
 
-    <section class="section">
-         <div class="container">
+<section class="section">
+    <div class="container">
         <div class="row align-items-center g-4">
 
             <div class="col-md-5">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10"
-                class="img-fluid rounded-4 shadow" alt="School picture">
+                class="img-fluid rounded-4 shadow" alt="School picture"
+                style="object-fit: contain; background-color: white; padding: 5px;">
             </div>
 
             <div class="col-md-7">
@@ -321,6 +332,7 @@
             <div class="col-md-5">
                 <h2 class="section-title">Enroll Now!</h2>
                 <h5>Become part of the OBMC community.</h5>
+
                 <p>
                     Start your learning journey and discover your potential
                     with the help of Montessori education.
@@ -482,7 +494,7 @@
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://scontent-sin11-1.xx.fbcdn.net/v/t39.30808-6/797035365_122258811656264008_52777103737405858_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s206x206&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=7a06f5&_nc_eui2=AeE6oSCkeiRxvTbL1IrKWrWZHJSlgej4p6UclKWB6PinpRXM-tF9poa2Wj7G3utjFbWM9Hz0tomxy6ELEEeQirkZ&_nc_ohc=vblpRhXnNZwQ7kNvwGY_swN&_nc_oc=AdoCNcqx3hJxGgQ6mBa4L4Q1JOOlo8hxgT6EPpOjxIe3-obO1XymsZUtUOg3aj8mjnc&_nc_zt=23&_nc_ht=scontent-sin11-1.xx&_nc_gid=01UuOtpoBMdK1GW6Qrp3Mg&_nc_ss=7b3a8&oh=00_AQSDQPNfSonnDxayAkOEuCHaTPz7nNtkCKVAgGZOlHUJOA&oe=6B0D5829"
+                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/333/profile_pictures/1764815538-2220.jpg?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795654291&Signature=hC4%2FTShj48veNfQFfsUvczbOuStUP0VPX2aYk9IopOygTUUW0Nm27fSN0VdDryXfPrclxRrcKsN6z8F8qpByKXHw2p7vOqiF8Dn5pJPUC%2FYHkEyXuH3IUzLNtGhdaqHZflFOdZgWlFIrAEofl20jtEENRdTN5Ehe53Qd5W7eevKY2oTdAzhR7Tb2vMLZSLOrc8EC7xl4KMX%2B4hQdNu6Nb4qWDtLilmvWaifhOzrGFFdaoIxNED8TIs5maiJsLWuGRc6%2B1rv7JewTujKgawjbwd6cdRBxY3%2B5tuB3QoAq4Z%2Fb3riQlziAYf3avq%2BBtBCkkeqPBA3oDU5XrBUu8lrmLA%3D%3D"
                     alt="Group member">
                     <div class="card-body text-center">
                         <h5 class="section-title">Doctor</h5>
@@ -493,7 +505,7 @@
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/2439/profile_pictures/1754120276-1816.JPG?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795654324&Signature=O6ov5nukiSSXkr4Xt6d83LAqzBGcasuK%2FgM7EDW1lTpfXzAcT4xNTPRrCh7%2F%2FHlbbaosNw0oxO6cn7fzVJlLRCgyrzZEtmEF0qohoMEitsamajXEAZQMK1VpjRrQZ0EWBBWGzob%2FpbAAhkWCYZ%2Fgd0I4HyuapEk9UNCdbUreIR00lLJ7BZB8AoKC%2Bfmetbn6S1gaMxnZ9lR6ZDPRjB%2FcC0TGAzyPm78s4yC6VuoFuswfYC4AsPyxx9IGPE%2FP0BJDmmmjoaNy1%2BmClcaqEXC5O%2FEkws2PNLtDtONeYykh76mzxwjynvtyDeUdGLsCFd0wg%2Fvn9EPPi8MOwJspFghVNg%3D%3D"
+                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/2439/profile_pictures/1754120276-1816.JPG?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795656173&Signature=l1o9yrm80IpHiqfZZ7OMEYmrZSHIUxsFplJ6blNVALlaYuWbEgr%2F0DxJ%2FphVv4ZZmO07zHsSKhbfNapAeDw%2BEQVEmj1lzV0Nw1ZSp9x4GhE7IZG0nErZYz73iRUrriEqvNgBsWxROzhFTvxD0rf%2BL4YuzSDRL%2Fkz61OVHqvg%2Bzu0nckp5hZBH4OIeFks2o14B0E0fTSU5A8i1ag9qH2qoOhhYEIympJD%2Bxr93bd4hX87CqmfllagHacNHXTlUDCFhKX3rhf9CObz4PQg0VdnjOn3U9EINmEy37j53Ak1MvLT6lcLLsOEhLfeH9uz%2FGfj1WqsslJ5r5TR3VoZj7JGaw%3D%3D"
                     alt="Group member">
                     <div class="card-body text-center">
                         <h5 class="section-title">Chee</h5>
