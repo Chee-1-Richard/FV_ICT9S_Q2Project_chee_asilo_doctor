@@ -1,75 +1,228 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OBMC Home</title>
+    <title>OBMC School Website</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        body { background-color: #f5f7fb; font-family: Arial, sans-serif; }
-        .navbar { background-color: #102f5e; }
-        .navbar-brand img { width: 180px; height: auto; }
-        .nav-link { color: white; }
-        .nav-link:hover { color: #ffd34e; }
-        .hero { background: linear-gradient(90deg, #102f5e, #2056a1); color: white; padding: 70px 20px; border-bottom: 6px solid #f4c542; }
-        .hero h1 { font-size: 50px; font-weight: bold; }
-        .hero img { border: 5px solid white; object-fit: contain; background-color: white; }
-        .section { padding: 50px 20px; }
-        .section-title { color: #102f5e; font-weight: bold; }
-        .red-btn { background-color: #d62828; color: white; border: none; }
-        .red-btn:hover { background-color: #a91d1d; color: white; }
-        .yellow-box { background-color: #fff3c4; }
-        .pink-box { background-color: #fde8ef; }
-        .blue-box { background-color: #e1edff; }
-        .green-box { background-color: #e2f3e8; }
-        .card { border: none; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .card img { width: 100%; height: 260px; object-fit: contain; object-position: center; background-color: #f5f7fb; padding: 5px; }
-        .course-card { border-top: 5px solid #d62828; }
-        .table thead { background-color: #102f5e; color: white; }
-        .site-footer { background-color: #142f55; color: white; padding: 35px 8% 15px; border-top: 4px solid #d4af65; margin-top: 50px; }
-        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: auto; }
-        .footer-brand h5 { font-size: 20px; font-weight: bold; margin-bottom: 8px; }
-        .footer-brand p { font-size: 14px; color: #cbd5e1; margin: 0; }
-        .footer-tagline p { font-size: 15px; font-style: italic; color: #e0c58c; margin: 0; }
-        .footer-bottom { text-align: center; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 25px; padding-top: 15px; }
-        .footer-bottom p { font-size: 12px; color: #aebed1; margin: 0; }
+        body {
+            background-color: #f5f7fb;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #102f5e;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-brand img {
+            width: 180px;
+            height: auto;
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: #ffd34e;
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #102f5e, #2056a1);
+            color: white;
+            padding: 70px 20px;
+            border-bottom: 6px solid #f4c542;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .hero img {
+            border: 5px solid white;
+            object-fit: contain;
+            background-color: white;
+        }
+
+        .section {
+            padding: 50px 20px;
+        }
+
+        .section-title {
+            color: #102f5e;
+            font-weight: bold;
+        }
+
+        .red-btn {
+            background-color: #d62828;
+            color: white;
+            border: none;
+        }
+
+        .red-btn:hover {
+            background-color: #a91d1d;
+            color: white;
+        }
+
+        .yellow-box {
+            background-color: #fff3c4;
+        }
+
+        .pink-box {
+            background-color: #fde8ef;
+        }
+
+        .blue-box {
+            background-color: #e1edff;
+        }
+
+        .green-box {
+            background-color: #e2f3e8;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 260px;
+            object-fit: contain;
+            object-position: center;
+            background-color: #f5f7fb;
+            padding: 5px;
+        }
+
+        .course-card {
+            border-top: 5px solid #d62828;
+        }
+
+        .table thead {
+            background-color: #102f5e;
+            color: white;
+        }
+
+        .site-footer {
+            background-color: #142f55;
+            color: white;
+            padding: 35px 8% 15px;
+            border-top: 4px solid #d4af65;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-brand h5 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-brand p {
+            font-size: 14px;
+            color: #cbd5e1;
+            margin: 0;
+        }
+
+        .footer-tagline p {
+            font-size: 15px;
+            font-style: italic;
+            color: #e0c58c;
+            margin: 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 25px;
+            padding-top: 15px;
+        }
+
+        .footer-bottom p {
+            font-size: 12px;
+            color: #aebed1;
+            margin: 0;
+        }
     </style>
 </head>
+
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container-fluid px-4">
-        <a class="navbar-brand" href="index.html">
-            <img src="https://static1.squarespace.com/static/664c7ae50eea9c731b37e817/t/6a5f8e02ce141d63995e575f/1784647171093/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w" alt="OBMC Logo">
+
+        <a class="navbar-brand" href="#home">
+            <img src="https://static1.squarespace.com/static/664c7ae50eea9c731b37e817/t/6a5f8e02ce141d63995e575f/1784647171093/OBMC+-+60TH+LOGO+-+DIAMOND+SLOGAN+-+APPROVED+-+2026+FA_OBMC+-+COLOR+HORIZONTAL.png?format=1500w"
+            alt="OBMC Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="page2.html">Courses Offer</a></li>
-                <li class="nav-item"><a class="nav-link" href="page3.html">Enroll Now</a></li>
-                <li class="nav-item"><a class="nav-link" href="page4.html">Contact Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="page5.html">About the Group</a></li>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses Offer</a></li>
+                <li class="nav-item"><a class="nav-link" href="#enroll">Enroll Now</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#group">About the Group</a></li>
             </ul>
         </div>
+
     </div>
 </nav>
 
-<section class="hero">
+<section class="hero" id="home">
     <div class="container">
         <div class="row align-items-center">
+
             <div class="col-md-6">
                 <h1>Welcome to OBMC!</h1>
                 <h5 class="mt-3">Learning Today, Leading Tomorrow</h5>
-                <p class="mt-3">Developing responsible, independent, and confident learners through Montessori education.</p>
-                <a href="page2.html" class="btn btn-warning rounded-pill px-4 mt-2">Explore Our School</a>
+
+                <p class="mt-3">
+                    Developing responsible, independent, and confident learners
+                    through Montessori education.
+                </p>
+
+                <a href="#courses" class="btn btn-warning rounded-pill px-4 mt-2">
+                    Explore Our School
+                </a>
             </div>
+
             <div class="col-md-6 text-center mt-4 mt-md-0">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5matk3XKMM-cup_Hl0kWGR7xPYDRuKWe1h90h6USzBQ&s" class="img-fluid rounded-4" style="max-width: 450px;" alt="OBMC">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5matk3XKMM-cup_Hl0kWGR7xPYDRuKWe1h90h6USzBQ&s"
+                class="img-fluid rounded-4" style="max-width: 450px;" alt="OBMC">
             </div>
+
         </div>
     </div>
 </section>
@@ -77,19 +230,303 @@
 <section class="section">
     <div class="container">
         <div class="row align-items-center g-4">
+
             <div class="col-md-5">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10" class="img-fluid rounded-4 shadow" alt="School picture" style="object-fit: contain; background-color: white; padding: 5px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffsm2n4xf-Ake_7FjbIElN4zOydP5HGxF899j-8bZJQ&s=10"
+                class="img-fluid rounded-4 shadow" alt="School picture"
+                style="object-fit: contain; background-color: white; padding: 5px;">
             </div>
+
             <div class="col-md-7">
                 <h2 class="section-title">About OBMC</h2>
-                <p>Operation Brotherhood Montessori Center (OBMC) is a school that helps students develop independence, discipline, responsibility, and knowledge. It provides education from early childhood to senior high school.</p>
-                <p>Through Montessori education, students learn to become responsible individuals, explore their abilities, and prepare for their future.</p>
+
+                <p>
+                    Operation Brotherhood Montessori Center (OBMC) is a school
+                    that helps students develop independence, discipline,
+                    responsibility, and knowledge. It provides education from
+                    early childhood to senior high school.
+                </p>
+
+                <p>
+                    Through Montessori education, students learn to become
+                    responsible individuals, explore their abilities, and
+                    prepare for their future.
+                </p>
+
                 <div class="card blue-box p-3">
                     <h5 class="section-title">Our Goal</h5>
-                    <p class="mb-0">To help students become responsible, respectful, and independent members of society.</p>
+                    <p class="mb-0">
+                        To help students become responsible, respectful,
+                        and independent members of society.
+                    </p>
                 </div>
             </div>
+
         </div>
+    </div>
+</section>
+
+<section class="section blue-box" id="courses">
+    <div class="container">
+        <h2 class="text-center section-title mb-2">Our Courses</h2>
+        <p class="text-center mb-4">Explore the different levels of education at OBMC.</p>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card course-card h-100">
+                    <div class="card-body">
+                        <h4 class="text-danger">Casa</h4>
+                        <p>
+                            Early childhood education where children
+                            learn basic skills, independence, and creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card course-card h-100">
+                    <div class="card-body">
+                        <h4 style="color:#2056a1;">Grade School</h4>
+                        <p>
+                            Students develop academic knowledge,
+                            creativity, and responsibility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card course-card h-100">
+                    <div class="card-body">
+                        <h4 style="color:#b88700;">Junior High</h4>
+                        <p>
+                            Students improve their skills, knowledge,
+                            and understanding of different subjects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card course-card h-100">
+                    <div class="card-body">
+                        <h4 style="color:#24834c;">Senior High</h4>
+                        <p>
+                            Students prepare for college, future careers,
+                            and other opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section pink-box" id="enroll">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <div class="col-md-5">
+                <h2 class="section-title">Enroll Now!</h2>
+                <h5>Become part of the OBMC community.</h5>
+
+                <p>
+                    Start your learning journey and discover your potential
+                    with the help of Montessori education.
+                </p>
+
+                <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/"
+                target="_blank" class="btn red-btn rounded-pill px-4">
+                    Open Enrollment Portal
+                </a>
+            </div>
+
+            <div class="col-md-7">
+                <div class="card p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Student Name</label>
+                            <input type="text" class="form-control" placeholder="Enter full name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Grade Level</label>
+                            <select class="form-select">
+                                <option>Select grade level</option>
+                                <option>Casa</option>
+                                <option>Grade School</option>
+                                <option>Junior High School</option>
+                                <option>Senior High School</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Campus</label>
+                            <select class="form-select">
+                                <option>Select campus</option>
+                                <option>Greenhills</option>
+                                <option>Fairview</option>
+                                <option>Las Piñas</option>
+                                <option>Angeles</option>
+                                <option>Sta. Ana</option>
+                            </select>
+                        </div>
+
+                        <button type="button" class="btn red-btn w-100">
+                            Submit Enrollment
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <h2 class="text-center section-title mb-4">Contact Us</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="card blue-box p-4 h-100">
+                    <h4 class="section-title">School Schedule</h4>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped text-center">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Schedule</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>8:00 AM - 4:00 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="small">*Sample schedule. Actual schedules may vary by campus.</p>
+
+                    <h5 class="section-title">School Portals</h5>
+
+                    <a href="https://obmontessori.orangeapps.ph/landing/obmontessori/"
+                    target="_blank" class="btn btn-primary mb-2">OBMC Portal</a>
+
+                    <a href="https://obmontessorifairview.orangeapps.ph/oa_school/"
+                    target="_blank" class="btn btn-success mb-2">Fairview VN Login</a>
+
+                    <a href="https://obmfairviewsis.orangeapps.ph/ob/"
+                    target="_blank" class="btn btn-warning">Fairview SIS Login</a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-4 h-100">
+                    <h4 class="section-title">Send Us a Message</h4>
+
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Write your message"></textarea>
+                        </div>
+
+                        <button type="button" class="btn red-btn w-100">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section yellow-box" id="group">
+    <div class="container">
+        <h2 class="text-center section-title mb-3">About Our Group</h2>
+
+        <p class="text-center mb-4">
+            We are Grade 9 students who worked together in designing
+            this website using HTML, CSS, and Bootstrap.
+        </p>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/333/profile_pictures/1764815538-2220.jpg?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795654291&Signature=hC4%2FTShj48veNfQFfsUvczbOuStUP0VPX2aYk9IopOygTUUW0Nm27fSN0VdDryXfPrclxRrcKsN6z8F8qpByKXHw2p7vOqiF8Dn5pJPUC%2FYHkEyXuH3IUzLNtGhdaqHZflFOdZgWlFIrAEofl20jtEENRdTN5Ehe53Qd5W7eevKY2oTdAzhR7Tb2vMLZSLOrc8EC7xl4KMX%2B4hQdNu6Nb4qWDtLilmvWaifhOzrGFFdaoIxNED8TIs5maiJsLWuGRc6%2B1rv7JewTujKgawjbwd6cdRBxY3%2B5tuB3QoAq4Z%2Fb3riQlziAYf3avq%2BBtBCkkeqPBA3oDU5XrBUu8lrmLA%3D%3D"
+                    alt="Group member">
+                    <div class="card-body text-center">
+                        <h5 class="section-title">Doctor</h5>
+                        <p>Helped design the layout and organize the content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/2439/profile_pictures/1754120276-1816.JPG?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795656173&Signature=l1o9yrm80IpHiqfZZ7OMEYmrZSHIUxsFplJ6blNVALlaYuWbEgr%2F0DxJ%2FphVv4ZZmO07zHsSKhbfNapAeDw%2BEQVEmj1lzV0Nw1ZSp9x4GhE7IZG0nErZYz73iRUrriEqvNgBsWxROzhFTvxD0rf%2BL4YuzSDRL%2Fkz61OVHqvg%2Bzu0nckp5hZBH4OIeFks2o14B0E0fTSU5A8i1ag9qH2qoOhhYEIympJD%2Bxr93bd4hX87CqmfllagHacNHXTlUDCFhKX3rhf9CObz4PQg0VdnjOn3U9EINmEy37j53Ak1MvLT6lcLLsOEhLfeH9uz%2FGfj1WqsslJ5r5TR3VoZj7JGaw%3D%3D"
+                    alt="Group member">
+                    <div class="card-body text-center">
+                        <h5 class="section-title">Chee</h5>
+                        <p>Worked on the HTML code and Bootstrap design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://storage.googleapis.com/oa_disk001/obfairview/67/student_files/239/profile_pictures/1764814911-272.JPG?GoogleAccessId=bucket-service-account%40orangeapps-v2-school.iam.gserviceaccount.com&Expires=1795655776&Signature=fdb6KG2RXjEdbmWzg97AyO8eZMMnXD95UOI1cvuVBbNv1d4vmBSpDSd1ShV00QNVeBUNNyXBvCGitqrpCEd3jJMKvQXJ%2BRRCHU9%2FxMvl7x96%2BCFHoGvTsASR6hOPtJK16kCnzzXdUB725%2F%2FCz8DKX5dBTheQ7Z2KeNQvEjCiWJITz%2BAtPxWCtptGCjPAhQi%2B65REvnD%2BTxaUCvE66KBlx6UuWpw5H7zagbwpkdh3R%2F3uv2vHvZ8E2rSPMomIJVkE0cXkXBmFU7foT%2FlUikX1GmB%2FZGe6wabyyZWtOYdYfwQh3mKMgEOYqD1TAM2GdfNMCdC5Re%2F8OoXAODJNe0xo4Q%3D%3D"
+                    alt="Group member">
+                    <div class="card-body text-center">
+                        <h5 class="section-title">Asilo</h5>
+                        <p>Helped find pictures and information for the website.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </section>
 
@@ -99,17 +536,19 @@
             <h5>OBMC School Website</h5>
             <p>ICT 9 | Second Quarter Project</p>
         </div>
+
         <div class="footer-tagline">
             <p>Education Today, A Better Tomorrow</p>
         </div>
     </div>
+
     <div class="footer-bottom">
         <p>© 2026 OBMC | All Rights Reserved</p>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-             
-       
+
